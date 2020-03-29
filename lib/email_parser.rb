@@ -11,14 +11,7 @@ class EmailAddressParser
   end
   
   def parse 
-    #have an empty array to dump all of this info into
-    #iterate over @email_addresses
-    #.split or something to separate at the spaces OR commas.
-    @email_addresses.split(", " || " ").uniq
-    # @email_addresses.collect do |emails|
-    #   emails.split(", " || " ").uniq
-    # end
-    
+    emails = @email_addresses.split(", " || " ").uniq
   end
   
 end
